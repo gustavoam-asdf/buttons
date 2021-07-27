@@ -1,0 +1,47 @@
+:host {
+  --light-grey: #e0e0e0;
+  --grey: #aeaeae;
+  --radius: 0.3em;
+  --white: #fff;
+  --blue: #3d5afe;
+  --light-blue: #eaefff;
+  --black: #000;
+}
+
+/* Basic Button */
+.button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 1.25em;
+
+  --main: var(--light-grey);
+  --focus: var(--grey);
+  --border: transparent;
+  --text: var(--black);
+
+  background-color: var(--main);
+
+  padding: 0.5em 0.95em;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+
+  outline: none;
+  cursor: pointer;
+}
+
+.box-shadow {
+  box-shadow: 1px 1px 3px var(--focus);
+}
+
+.button:focus,
+.button:hover {
+  background-color: var(--focus);
+}
+
+.button.outline {
+  --main: var(--white);
+  --border: var(--blue);
+  --text: var(--blue);
+  --focus: var(--light-blue);
+}
