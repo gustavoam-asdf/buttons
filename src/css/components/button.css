@@ -9,7 +9,7 @@
 }
 
 /* Basic Button */
-.button {
+button {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 1.25em;
@@ -34,14 +34,21 @@
   box-shadow: 1px 1px 3px var(--focus);
 }
 
-.button:focus,
-.button:hover {
+button:focus,
+button:hover {
   background-color: var(--focus);
 }
 
-.button.outline {
+button.outline {
   --main: var(--white);
   --border: var(--blue);
+  --text: var(--blue);
+  --focus: var(--light-blue);
+}
+
+button.text {
+  --main: var(--white);
+  --border: transparent;
   --text: var(--blue);
   --focus: var(--light-blue);
 }
