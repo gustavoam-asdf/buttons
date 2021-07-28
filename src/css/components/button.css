@@ -1,6 +1,7 @@
 :host {
   --light-grey: #e0e0e0;
   --grey: #aeaeae;
+  --dark-grey: #9e9e9e;
   --radius: 0.3em;
   --white: #fff;
   --blue: #3d5afe;
@@ -8,47 +9,87 @@
   --black: #000;
 }
 
-/* Basic Button */
+/** Basic Button **/
 button {
+  /* Appearance */
+  --app-main: var(--light-grey);
+  --app-focus: var(--grey);
+  --app-border: transparent;
+  --app-text: var(--black);
+
+  /* Size */
+  --sz-letter: 1.25em;
+  --sz-border: 2px;
+  --sz-padding: 0.5em 0.95em;
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: var(--sz-letter);
 
-  --main: var(--light-grey);
-  --focus: var(--grey);
-  --border: transparent;
-  --text: var(--black);
+  background-color: var(--app-main);
 
-  background-color: var(--main);
-
-  padding: 0.5em 0.95em;
-  border: 2px solid var(--border);
+  padding: var(--sz-padding);
+  border: var(--sz-border) solid var(--app-border);
   border-radius: var(--radius);
-  color: var(--text);
+  color: var(--app-text);
 
   outline: none;
   cursor: pointer;
 }
 
 .box-shadow {
-  box-shadow: 1px 1px 3px var(--focus);
+  box-shadow: 1px 1px 3px var(--app-focus);
 }
 
 button:focus,
 button:hover {
-  background-color: var(--focus);
+  background-color: var(--app-focus);
 }
 
-button.outline {
-  --main: var(--white);
-  --border: var(--blue);
-  --text: var(--blue);
-  --focus: var(--light-blue);
+button:disabled {
+  --app-text: var(--dark-grey);
+  --app-focus: var(--app-main);
+  cursor: inherit;
 }
 
-button.text {
-  --main: var(--white);
-  --border: transparent;
-  --text: var(--blue);
-  --focus: var(--light-blue);
+/** Variants **/
+.variant-default {
+  --app-main: var(--light-grey);
+  --app-focus: var(--grey);
+  --app-border: transparent;
+  --app-text: var(--black);
+}
+
+.variant-outline {
+  --app-main: var(--white);
+  --app-border: var(--blue);
+  --app-text: var(--blue);
+  --app-focus: var(--light-blue);
+}
+
+.variant-text {
+  --app-main: transparent;
+  --app-border: transparent;
+  --app-text: var(--blue);
+  --app-focus: var(--light-blue);
+}
+
+/** Sizes **/
+
+.size-small {
+  --sz-letter: 0.9em;
+  --sz-border: 1px;
+  --sz-padding: 0.4em 0.8em;
+}
+
+.size-medium {
+  --sz-letter: 1.25em;
+  --sz-border: 2px;
+  --sz-padding: 0.5em 0.95em;
+}
+
+.size-big {
+  --sz-letter: 1.4em;
+  --sz-border: 3px;
+  --sz-padding: 0.5em 0.95em;
 }

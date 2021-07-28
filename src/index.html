@@ -4,20 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
       crossorigin="anonymous"
-    />
+    /> -->
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="shortcut icon" href="/" type="image/x-icon" />
     <title>Buttons</title>
   </head>
   <body>
-    <dev-button text="Button" box-shadow></dev-button>
-    <dev-button text="Button" variant="outline" box-shadow></dev-button>
-    <dev-button text="Button" variant="text"></dev-button>
+    <dev-button box-shadow> Button </dev-button>
+    <dev-button variant="outline" box-shadow> Button </dev-button>
+    <dev-button variant="text"> Button </dev-button>
+    <!-- <dev-button size="small"> Button </dev-button>
+    <dev-button size="big"> Button </dev-button> -->
+    <dev-button disabled> Button </dev-button>
+    <dev-button variant="text" disabled> Button </dev-button>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
