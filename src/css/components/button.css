@@ -4,9 +4,14 @@
   --dark-grey: #9e9e9e;
   --radius: 0.3em;
   --white: #fff;
-  --blue: #3d5afe;
   --light-blue: #eaefff;
+  --blue: #3d5afe;
+  --dark-blue: #0039cb;
   --black: #000;
+  --green: #455a64;
+  --dark-green: #1c313a;
+  --red: #d32f2f;
+  --wine: #9a0007;
 }
 
 /** Basic Button **/
@@ -53,13 +58,6 @@ button:disabled {
 }
 
 /** Variants **/
-.variant-default {
-  --app-main: var(--light-grey);
-  --app-focus: var(--grey);
-  --app-border: transparent;
-  --app-text: var(--black);
-}
-
 .variant-outline {
   --app-main: var(--white);
   --app-border: var(--blue);
@@ -92,4 +90,34 @@ button:disabled {
   --sz-letter: 1.4em;
   --sz-border: 3px;
   --sz-padding: 0.5em 0.95em;
+}
+
+/** Colors **/
+
+.color-default {
+  --app-main: var(--light-grey);
+  --app-focus: var(--grey);
+  --app-border: transparent;
+  --app-text: var(--black);
+}
+
+.color-primary {
+  --app-main: var(--blue);
+  --app-focus: var(--dark-blue);
+  --app-border: transparent;
+  --app-text: var(--white);
+}
+
+.color-secondary {
+  --app-main: var(--green);
+  --app-focus: var(--dark-green);
+  --app-border: transparent;
+  --app-text: var(--white);
+}
+
+.color-danger {
+  --app-main: var(--red);
+  --app-focus: var(--wine);
+  --app-border: transparent;
+  --app-text: var(--white);
 }

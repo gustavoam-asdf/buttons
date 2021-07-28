@@ -23,7 +23,7 @@
     }
 
     static get observedAttributes() {
-      return ['box-shadow', 'variant', 'size', 'disabled']
+      return ['box-shadow', 'variant', 'size', 'disabled', 'color']
     }
 
     attributeChangedCallback(attr, oldValue, newValue) {
@@ -40,6 +40,9 @@
         this.button.classList.add(`size-${newValue}`)
       } else if (attr === 'disabled') {
         this.button.setAttribute(attr, newValue)
+      } else if (attr === 'color') {
+        this.button.classList.remove(`color-${oldValue}`)
+        this.button.classList.add(`color-${newValue}`)
       }
     }
   }
