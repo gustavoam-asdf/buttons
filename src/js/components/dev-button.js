@@ -25,7 +25,23 @@
     }
 
     static get observedAttributes() {
-      return ['box-shadow', 'variant', 'size', 'color', 'disabled']
+      return [
+        'box-shadow',
+        'variant',
+        'size',
+        'color',
+        'autofocus',
+        'disabled',
+        'form',
+        'formaction',
+        'formenctype',
+        'formmethod',
+        'formnovalidate',
+        'formtarget',
+        'name',
+        'type',
+        'value'
+      ]
     }
 
     attributeChangedCallback(attr, oldValue, newValue) {
@@ -44,6 +60,10 @@
       } else if (attr === 'color') {
         this.button.classList.remove(`color-${oldValue}`)
         this.button.classList.add(`color-${newValue}`)
+      } else {
+        newValue != null
+          ? this.button.setAttribute(attr, newValue)
+          : this.button.removeAttribute(attr)
       }
     }
   }
