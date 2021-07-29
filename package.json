@@ -1,0 +1,26 @@
+{
+  "name": "buttons",
+  "version": "0.6.0",
+  "description": "'Reusable buttons, challenge of devChallenges.io'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoam-asdf/buttons.git"
+  },
+  "keywords": [
+    "buttons",
+    "customElements"
+  ],
+  "author": "Gustavo A.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoam-asdf/buttons/issues"
+  },
+  "homepage": "https://github.com/gustavoam-asdf/buttons#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3"
+  }
+}
