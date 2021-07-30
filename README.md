@@ -28,7 +28,6 @@
 - [Overview](#overview)
   - [Built With](#built-with)
 - [Features](#features)
-- [Contact](#contact)
 
 <!-- OVERVIEW -->
 
@@ -45,16 +44,10 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 ### Built With
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [Shadow Root](https://developer.mozilla.org/en-US/docs/Web/API/ShadowRoot)
+- [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements)
+- [FontAwesome](https://fontawesome.com/)
 
 ## Features
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY) was to build an application to complete the given user stories.
-
-## Contact
-
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
