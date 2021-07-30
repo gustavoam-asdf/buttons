@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://gustavoam-asdf.github.io/buttons/src/">
       Solution
     </a>
     <span> | </span>
@@ -31,12 +31,9 @@
 
 ![screenshot](https://drive.google.com/uc?export=download&id=12FQjx-WVhzqgnymhnVkZveNAmoyCROQH)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+I developed this challenge to practice my knowledge of customElements and shadowRoot api
+You can find the solution at: [gustavoam-asdf/buttons](https://gustavoam-asdf.github.io/buttons/src/)
 
 ### Built With
 
