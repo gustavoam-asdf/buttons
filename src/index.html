@@ -13,44 +13,84 @@
     <title>Buttons</title>
   </head>
   <body>
-    <dev-button box-shadow>
-      <span slot="left-icon" class="fas fa-plus"></span>
-      <span slot="text"> Button </span>
-      <span slot="right-icon" class="fas fa-plus-circle"></span>
-    </dev-button>
-    <dev-button variant="outline" box-shadow autofocus>
-      <span slot="right-icon" class="fas fa-plus-circle"></span>
-      <span slot="text"> Button </span>
-    </dev-button>
-    <dev-button variant="text">
-      <span slot="left-icon" class="fas fa-check"></span>
-      <span slot="text"> Button </span>
-    </dev-button>
-    <!-- <dev-button size="small"> Button </dev-button>
-    <dev-button size="big"> Button </dev-button> -->
-    <dev-button disabled>
-      <span slot="text"> Button </span>
-      <span slot="left-icon" class="fas fa-check-circle"></span>
-    </dev-button>
-    <dev-button variant="text" disabled>
-      <span slot="text"> Button </span>
-      <span slot="right-icon" class="fas fa-check-circle"></span>
-    </dev-button>
-    <dev-button color="default">
-      <span slot="text"> Button </span>
-    </dev-button>
-    <dev-button color="primary">
-      <span slot="text"> Button </span>
-    </dev-button>
-    <dev-button color="secondary">
-      <span slot="text"> Button </span>
-    </dev-button>
-    <dev-button color="secondary" variant="outline">
-      <span slot="text"> Button </span>
-    </dev-button>
-    <dev-button color="danger">
-      <span slot="text"> Button </span>
-    </dev-button>
+    <h1>Buttons reusable, devChallenges.io</h1>
+    <div class="buttons-box">
+      <dev-box>
+        <dev-button slot="button" box-shadow>
+          <span slot="left-icon" class="fas fa-plus"></span>
+          <span slot="text"> Button </span>
+          <span slot="right-icon" class="fas fa-plus-circle"></span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" variant="outline" box-shadow autofocus>
+          <span slot="right-icon" class="fas fa-plus-circle"></span>
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" variant="text">
+          <span slot="left-icon" class="fas fa-check"></span>
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" size="small">
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" size="big">
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" disabled>
+          <span slot="text"> Button </span>
+          <span slot="left-icon" class="fas fa-check-circle"></span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" variant="text" disabled>
+          <span slot="text"> Button </span>
+          <span slot="right-icon" class="fas fa-check-circle"></span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" color="default">
+          <span slot="text"> Button </span>
+          <span slot="left-icon" class="fas fa-dollar-sign"></span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" color="primary">
+          <span slot="text"> Button </span>
+          <span slot="right-icon" class="fas fa-yen-sign"></span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" color="secondary">
+          <span slot="left-icon" class="fas fa-shopping-cart"></span>
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+
+      <dev-box>
+        <dev-button slot="button" color="danger">
+          <span slot="right-icon" class="fas fa-shopping-bag"></span>
+          <span slot="text"> Button </span>
+        </dev-button>
+      </dev-box>
+    </div>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
