@@ -18,7 +18,7 @@
     <h1>Reusable buttons, devChallenges.io</h1>
     <div class="buttons-box">
       <dev-box>
-        <dev-button slot="button" box-shadow>
+        <dev-button slot="button" box-shadow indicator="Buttons with icons">
           <span slot="left-icon" class="fas fa-plus"></span>
           <span slot="text"> Button </span>
           <span slot="right-icon" class="fas fa-plus-circle"></span>
@@ -26,40 +26,51 @@
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" variant="outline" box-shadow autofocus>
+        <dev-button
+          slot="button"
+          variant="outline"
+          box-shadow
+          autofocus
+          indicator="Outline focused button"
+        >
           <span slot="right-icon" class="fas fa-plus-circle"></span>
           <span slot="text"> Button </span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" variant="text">
+        <dev-button slot="button" variant="text" indicator="Text button">
           <span slot="left-icon" class="fas fa-check"></span>
           <span slot="text"> Button </span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" size="small">
+        <dev-button slot="button" size="small" indicator="Small button">
           <span slot="text"> Button </span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" size="big">
+        <dev-button slot="button" size="big" indicator="Big button">
           <span slot="text"> Button </span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" disabled>
+        <dev-button slot="button" disabled indicator="Disabled button">
           <span slot="text"> Button </span>
           <span slot="left-icon" class="fas fa-check-circle"></span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" variant="text" disabled>
+        <dev-button
+          slot="button"
+          variant="text"
+          disabled
+          indicator="Disabled text button"
+        >
           <span slot="text"> Button </span>
           <span slot="right-icon" class="fas fa-check-circle"></span>
         </dev-button>
@@ -73,21 +84,25 @@
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" color="primary">
+        <dev-button slot="button" color="primary" indicator="Primary button">
           <span slot="text"> Button </span>
           <span slot="right-icon" class="fas fa-yen-sign"></span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" color="secondary">
+        <dev-button
+          slot="button"
+          color="secondary"
+          indicator="Secondary button"
+        >
           <span slot="left-icon" class="fas fa-shopping-cart"></span>
           <span slot="text"> Button </span>
         </dev-button>
       </dev-box>
 
       <dev-box>
-        <dev-button slot="button" color="danger">
+        <dev-button slot="button" color="danger" indicator="Danger button">
           <span slot="right-icon" class="fas fa-shopping-bag"></span>
           <span slot="text"> Button </span>
         </dev-button>

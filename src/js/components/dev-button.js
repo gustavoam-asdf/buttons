@@ -1,22 +1,45 @@
 {
   let root
+  let contador = 0
   class DevButton extends HTMLElement {
     constructor() {
       super()
       root = this.attachShadow({
         mode: 'closed'
       })
-      // StyleSheet
+      this.setupStyleSheet('./css/components/button.css')
+      this.setupButton()
+    }
+
+    setupStyleSheet(url) {
       this.styleSheet = document.createElement('link')
       this.styleSheet.setAttribute('rel', 'stylesheet')
-      this.styleSheet.setAttribute('href', './css/components/button.css')
+      this.styleSheet.setAttribute('href', url)
+      return this.styleSheet
+    }
 
-      this.button = document.createElement('button')
-      this.button.innerHTML = `
+    get defaultButton() {
+      const button = document.createElement('button')
+      button.innerHTML = `
         <slot name="left-icon" class="icon fas" ></slot>
         <slot name="text"></slot>
         <slot name="right-icon" class="icon fas"></slot>
+        <span class="indicator disabled">Button</span>
       `
+      return button
+    }
+
+    setupButton() {
+      this.button = this.defaultButton
+      this.indicatorMessage = this.button.querySelector('span.indicator')
+      this.button.addEventListener('mouseenter', () => {
+        this.indicatorMessage.classList.remove('disabled')
+        this.indicatorMessage.classList.add('enabled')
+      })
+      this.button.addEventListener('mouseleave', () => {
+        this.indicatorMessage.classList.remove('enabled')
+        this.indicatorMessage.classList.add('disabled')
+      })
     }
 
     connectedCallback() {
@@ -30,6 +53,7 @@
         'variant',
         'size',
         'color',
+        'indicator',
         'autofocus',
         'disabled',
         'form',
@@ -60,6 +84,8 @@
       } else if (attr === 'color') {
         this.button.classList.remove(`color-${oldValue}`)
         this.button.classList.add(`color-${newValue}`)
+      } else if (attr === 'indicator') {
+        this.indicatorMessage.textContent = newValue
       } else {
         newValue != null
           ? this.button.setAttribute(attr, newValue)
